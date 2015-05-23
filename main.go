@@ -13,7 +13,7 @@ import (
 func main() {
 	var projectdir string
 
-	flag.StringVar(&projectdir, "p", os.Getenv("GB_PROJECT_DIR"), "project directory")
+	flag.StringVar(&projectdir, "R", os.Getenv("GB_PROJECT_DIR"), "project directory")
 	flag.Parse()
 
 	vendor := filepath.Join(projectdir, "vendor")
